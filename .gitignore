@@ -1,0 +1,5 @@
+mongrel2-v*.tar.bz2
+pushpin-*.tar.bz2
+zurl-*.tar.bz2
+/RPMS/*
+/.vagrant

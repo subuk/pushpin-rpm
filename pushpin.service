@@ -1,0 +1,15 @@
+[Unit]
+Description=PushPin service
+After=syslog.target network.target
+
+[Service]
+ExecStart=/opt/pushpin/bin/pushpin
+Environment="PATH=/opt/pushpin/bin:/usr/bin:/bin"
+User=pushpin
+Group=pushpin
+KillMode=process
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
